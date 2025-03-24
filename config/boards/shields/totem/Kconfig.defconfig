@@ -4,7 +4,7 @@
 if SHIELD_TOTEM_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "TOTEM"
+    default "KacpersTotem"
     
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
@@ -15,5 +15,18 @@ if SHIELD_TOTEM_LEFT || SHIELD_TOTEM_RIGHT
 
 config ZMK_SPLIT
     default y
+
+config ZMK_POINTING
+    default y
+
+config ZMK_SLEEP
+    default y
+
+config BT_CTLR_TX_PWR
+    int
+    default 8 
+
+config ZMK_IDLE_SLEEP_TIMEOUT
+    default 1800000
 
 endif
